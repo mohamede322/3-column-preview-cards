@@ -33,6 +33,13 @@ main{
     transform: translate(-50% , -50%);
     border-radius: 10px;
 }
+@media(max-width:767px){
+    main{
+        flex-direction: column;
+        width:100%;
+        height: 100%;
+    }
+}
 main .box{
     display: flex;
     flex-direction: column;
@@ -41,10 +48,24 @@ main .box{
     color: white;
     position: relative;
 }
+@media(max-width:767px){
+    main .box{
+        gap: 10px;
+        padding: 50px 50px;
+        margin: 0px 20px 0px 20px;
+        justify-content: space-between;
+}
+}
 main .box:first-child{
 background-color: var(--Bright-orange);
 border-top-left-radius: 10px;
 border-bottom-left-radius: 10px;
+}
+@media(max-width:767px){
+    main .box:first-child{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
 }
 main .box:first-child a{
     color:var(--Bright-orange) ;
@@ -59,6 +80,13 @@ main .box:last-child{
     background-color: var(--Very-dark-cyan);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    margin-bottom: 20px;
+}
+@media(max-width:767px){
+    main .box:last-child{
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
 }
 main .box:last-child a{
     color: var(--Very-dark-cyan);
@@ -83,6 +111,14 @@ main .box a{
     border-radius: 30px;
     transition: 0.3s;
 }
+@media(max-width:767px){
+    main .box a{
+        bottom: 10px;
+        font-size: 12px;
+        padding: 10px 15px;
+        position: unset;
+    }
+}
 main .box a:hover{
     border: 3px solid white;
     background-color: transparent;
@@ -94,4 +130,9 @@ main .box a:hover{
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+}
+@media(max-width:767px){
+    .attribution{
+        display: none;
+    }
 }
