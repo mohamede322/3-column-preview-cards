@@ -80,7 +80,6 @@ main .box:last-child{
     background-color: var(--Very-dark-cyan);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    margin-bottom: 20px;
 }
 @media(max-width:767px){
     main .box:last-child{
