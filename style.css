@@ -1,0 +1,97 @@
+/* Globals */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 15px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --background-headings-buttons: hsl(0, 0%, 95%);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+/* Globals */
+/* Project */
+main{
+    width: 1440px;
+    height: calc(100vh - 200px);
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 10px;
+}
+main .box{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 100px;
+    color: white;
+    position: relative;
+}
+main .box:first-child{
+background-color: var(--Bright-orange);
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+main .box:first-child a{
+    color:var(--Bright-orange) ;
+}
+main .box:nth-child(2){
+    background-color: var(--Dark-cyan);
+}
+main .box:nth-child(2) a{
+    color: var(--Dark-cyan);
+}
+main .box:last-child{
+    background-color: var(--Very-dark-cyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main .box:last-child a{
+    color: var(--Very-dark-cyan);
+}
+main .box img{
+    width: 100px;
+}
+main .box h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 60px;
+}
+main .box p{
+    font-size: 16px;
+    line-height: 2;
+}
+main .box a{
+    position: absolute;
+    bottom: 50px;
+    background-color: white;
+    width: fit-content;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+main .box a:hover{
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+}
+/* Project */
+.attribution{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
